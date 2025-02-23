@@ -1,5 +1,4 @@
 body {
-  /* height: 100%; */
   font-family: "Inter", sans-serif;
   font-weight: 200;
   color: rgb(231, 217, 139);
@@ -33,6 +32,6 @@ body {
     }
 
     .section p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
