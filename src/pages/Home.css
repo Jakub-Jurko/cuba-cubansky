@@ -1,0 +1,33 @@
+body {
+  /* height: 100%; */
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: rgb(231, 217, 139);
+  font-weight: bold;
+}
+
+.home-page {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding-left: 45vw;
+}
+
+.section h4 {
+    margin-bottom: 0;
+}
+
+.section p {
+  font-weight: normal;
+}
+
+@media (max-width: 700px){
+    .section p {
+        font-size: 10px;
+    }
+}
