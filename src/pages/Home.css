@@ -27,7 +27,12 @@ body {
 }
 
 @media (max-width: 700px){
+    .section {
+        width: 60vw;
+        padding-left: 30vw;
+    }
+
     .section p {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
