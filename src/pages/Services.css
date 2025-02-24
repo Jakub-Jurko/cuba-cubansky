@@ -1,0 +1,43 @@
+.services-page {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding-left: 35vw;
+  }
+
+h1 {
+    font-size: 200px;
+}
+
+.one-service {
+    display: flex;
+    max-height: 220px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.one-service p {
+    /* font-size: 10px; */
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1030px){
+    h1 {
+        font-size: 150px;
+    }
+
+    .one-service p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 785px){
+    .service-page {
+        width: 65vw;
+    }
+}

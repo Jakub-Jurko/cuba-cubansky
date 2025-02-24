@@ -8,7 +8,7 @@ const Home = () => {
         <p>
           Jsem tatér samouk a každé tetování pro mě znamená něco víc než jen
           obraz na pokožce. Každé dílo je pro mě jedinečným příběhem, který
-          vyprávím skrze inkoust a detaily. Věřím, že tetování je osobní
+          vyprávím skrze inkoust. Věřím, že tetování je osobní
           záležitostí, která by měla odrážet jedinečnost každého člověka, jeho
           životní cestu a zkušenosti. Proto se zaměřuji na detaily, abych
           vytvořil kousky, které budou nejen krásné, ale i autentické a
@@ -16,11 +16,11 @@ const Home = () => {
         </p>
 
         <p>
-          Neváhejte mě kontaktovat, pokud máte vlastní nápad nebo představu.
-          Každý návrh připravuji individuálně podle vašich přání a představ, a
-          pokud si nejste jisti, rád vám pomohu s vytvořením návrhu, který bude
-          dokonale ladit s vaším stylem a osobností. Mým cílem je, aby každý
-          zákazník odcházel s pocitem, že dostal něco, co je pro něj skutečně
+          Neváhej mě kontaktovat, pokud máš vlastní nápad nebo představu.
+          Každý návrh připravuji individuálně podle tvých přání a představ, a
+          pokud si nejsi jistý/á, rád ti pomohu s vytvořením návrhu, který bude
+          dokonale ladit s tvým stylem a osobností. Mým cílem je, aby každý
+          si odcházel/a s pocitem, že si dostal/a něco, co je pro tebe skutečně
           výjimečné a unikátní.
         </p>
 
