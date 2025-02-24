@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 body {
+  background-color: black;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -17,7 +18,7 @@ body {
 @media (max-width: 768px) {
   body {
     background-image: url("./images/background-mobile.webp");
-  background-position: center;
+  background-position: ;
   background-size: cover;
   background-repeat: no-repeat;
   }
