@@ -15,7 +15,7 @@ h1 {
 }
 
 h3 {
-    margin: 10px 0;
+    margin: 24px 0;
 }
 
 .one-service {
@@ -29,7 +29,7 @@ h3 {
 
 .one-service p {
     font-weight: normal;
-  font-size: clamp(10px, 2vw, 24px);
+  font-size: clamp(20px, 2vw, 24px);
   line-height: 1.5em;
   text-shadow: 2px 2px 3px rgb(231, 217, 139);
   font-family: "Inter", sans-serif;
