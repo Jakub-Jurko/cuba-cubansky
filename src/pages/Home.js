@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}>
-    <div className="home-page">
+      transition={{ duration: 0.9, ease: "easeIn" }}>
+    <div className="home-page background">
       <section className="section">
         <h4>Ahoj, </h4>
         <p>
