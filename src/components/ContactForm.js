@@ -6,7 +6,7 @@ const ContactForm = () => {
     const [status, setStatus] = useState("");
 
     const API_URL =
-  process.env.REACT_APP_API_URL || "http://localhost:5000/send-email";
+  process.env.REACT_APP_API_URL || "https://cuba-cubansky-backend.onrender.com/send-email";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
