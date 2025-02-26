@@ -5,6 +5,9 @@ const ContactForm = () => {
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("");
 
+    const API_URL =
+  process.env.REACT_APP_API_URL || "http://localhost:5000/send-email";
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
