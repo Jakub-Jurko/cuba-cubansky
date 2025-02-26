@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ContactForm.css"
 
 const ContactForm = () => {
     const [email, setEmail] = useState("");
@@ -35,19 +36,23 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit}>
             <input
                 type="email"
-                placeholder="Váš e-mail"
+                placeholder="Tvůj e-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
             />
             <textarea
-                placeholder="Vaše zpráva"
+                placeholder="Tvoje zpráva"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
             ></textarea>
             <button type="submit">Odeslat</button>
-            {status && <p>{status}</p>}
+            {status && (
+                <p className={`status ${status.includes("úspěšně") ? "success" : "error"}`}>
+                    {status}
+                </p>
+            )}
         </form>
     );
 };
