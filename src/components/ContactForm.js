@@ -1,16 +1,22 @@
 import React, { useState } from "react";
-import "./ContactForm.css"
+import "./ContactForm.css";
 
 const ContactForm = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false); // Stav pro zakázání tlačítka
 
     const API_URL =
-  process.env.REACT_APP_API_URL || "https://cuba-cubansky-backend.onrender.com/send-email";
+        process.env.REACT_APP_API_URL || "https://cuba-cubansky-backend.onrender.com/send-email";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (isSubmitting) return; // Zabrání opakovanému odeslání
+
+        setIsSubmitting(true);
+        setStatus("Odesílání...");
 
         try {
             const response = await fetch(API_URL, {
@@ -29,6 +35,8 @@ const ContactForm = () => {
             }
         } catch (error) {
             setStatus("Nepodařilo se odeslat e-mail.");
+        } finally {
+            setIsSubmitting(false); // Po dokončení povolit tlačítko
         }
     };
 
@@ -40,14 +48,18 @@ const ContactForm = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                disabled={isSubmitting}
             />
             <textarea
                 placeholder="Tvoje zpráva"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
+                disabled={isSubmitting}
             ></textarea>
-            <button type="submit">Odeslat</button>
+            <button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Odesílání..." : "Odeslat"}
+            </button>
             {status && (
                 <p className={`status ${status.includes("úspěšně") ? "success" : "error"}`}>
                     {status}

@@ -113,7 +113,7 @@ const Gallery = () => {
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center p-4">
           <div className="relative w-full h-full flex items-center justify-center">
             <button
-              className="absolute top-4 right-4 text-white text-4xl hover:text-gray-300"
+              className="close-button absolute top-4 right-4 text-white text-4xl hover:text-gray-300"
               onClick={() => setVisible(false)}
             >
               <IoClose />

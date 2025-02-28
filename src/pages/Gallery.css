@@ -30,8 +30,7 @@
 .max-h-\[90vh\] {
     /* max-height: 60% !important; */
     width: 80vw !important;
-    height: auto !important;
-    
+    height: auto !important;    
 }
 
 .shadow-2xl {
@@ -80,4 +79,17 @@ button {
 
 .large {
     border-radius: 10px !important;
+}
+
+@media (max-width: 700px){
+    .max-h-\[90vh\] {
+        /* max-height: 60% !important; */
+        width: 80vw !important;
+        max-height: 70vh !important;    
+    }
+
+    .close-button {
+        margin-top: 35px !important;
+        font-size: 28px !important;
+    }
 }
