@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-white {
+    background-color: rgba(214, 214, 214, 0.4) !important;
+    /* border-bottom: 25px solid black !important; */
+}
+
+.object-contain {
+    /* object-fit: contain !important; */
+    height: 60vh !important;
+    background-color: rgba(219, 219, 219, 0.4) !important;
+    margin-bottom: 20px !important; overflow: inherit !important;
+    border-radius: 10px !important;
+    
+}
+
+.bg-white {
+    /* opacity: 0.4 !important; */
+}
+
+
+.rounded-xl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.max-h-\[90vh\] {
+    /* max-height: 60% !important; */
+    width: 80vw !important;
+    height: auto !important;
+    
+}
+
+.shadow-2xl {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+element.style {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    opacity: 0.4 !important;
+    border-radius: 15px !important;
+    width: 100vw !important;
+    padding-top: 0 !important;
+}
+
+h1 {
+    font-size: clamp(18px, 3vw, 28px);
+    text-shadow: 2px 2px 3px rgb(231, 217, 139);
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: rgb(231, 217, 139);color: rgb(231, 217, 139) !important;
+}
+
+.rounded-xl {
+    box-shadow: 0px 0px 10px rgba(231, 217, 139, 0.459);
+}
+
+button {
+    z-index: 10 !important;
+}
+
+.p-galleria .p-galleria-thumbnail-container {
+    padding-top: 0 !important;
+}
+
+button {
+    color: wheat !important;
+}
+
+.shadow-md {
+    background-color: rgba(49, 49, 49, 0.295);
+
+}
+
+.large {
+    border-radius: 10px !important;
+}

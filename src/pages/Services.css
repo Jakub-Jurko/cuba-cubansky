@@ -2,21 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 55vw;
-    padding-left: 40vw;
-    margin-top: 40px;
+    width: 100vw !important;
+    padding-left: 40vw !important;
+    margin-top: 40px !important;
+    padding-right: 20px !important;
+    margin-bottom: 30px;
   }
 
 h1 {
     margin: 0;
-    font-size: 180px;
+    font-size: 120px;
     color: rgb(231, 217, 139);
     margin-right: 20px;
 }
 
 h3 {
     margin: 24px 0;
-    font-size: clamp(18px, 3vw, 28px);
+    font-size: clamp(18px, 3vw, 24px);
 }
 
 .one-service {
@@ -30,7 +32,7 @@ h3 {
 
 .one-service p {
     font-weight: normal;
-  font-size: clamp(14px, 2vw, 24px);
+  font-size: clamp(14px, 2vw, 20px);
   line-height: 1.5em;
   text-shadow: 2px 2px 3px rgb(231, 217, 139);
   font-family: "Inter", sans-serif;
@@ -44,8 +46,8 @@ h3 {
 @media (max-width: 768px){    
 
     .services-page {
-        padding-left: 25vw;
-        width: 70vw;
+        padding-left: 60vw !important;
+        width: 70vw !important;
         margin-top: 20px;
         margin-bottom: 30px;
     }
@@ -56,9 +58,13 @@ h3 {
         margin: 0;
     }
 
+    .one-service p {
+        width: 60vw !important;
+    }
+
     h1 {
         font-size: 70px ;
-        /* margin-top: 50px; */
+        margin-top: 20px !important;
         margin: 0;
     }
 }

@@ -25,7 +25,7 @@ const Navbar = () => {
   }, [showMenu]);
 
   return (
-    <nav ref={menuRef}>
+    <nav className="nav" ref={menuRef}>
       <div className="navigation">
         <div className="nav-header">           
             <NavLink to="/">
