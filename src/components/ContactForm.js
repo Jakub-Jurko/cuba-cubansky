@@ -15,8 +15,7 @@ const ContactForm = () => {
 
         if (isSubmitting) return; // Zabrání opakovanému odeslání
 
-        setIsSubmitting(true);
-        setStatus("Odesílání...");
+        setIsSubmitting(true);;
 
         try {
             const response = await fetch(API_URL, {

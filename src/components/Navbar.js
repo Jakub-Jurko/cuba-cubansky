@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className="nav" ref={menuRef}>
       <div className="navigation">
         <div className="nav-header">           
-            <NavLink to="/">
+            <NavLink  to="/" onClick={() => setShowMenu(false)}>
             <img className="logo" src={logo} alt="Logo" />
           </NavLink>                     
           <button onClick={(e) => { 
